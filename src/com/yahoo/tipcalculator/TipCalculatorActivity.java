@@ -38,7 +38,7 @@ public class TipCalculatorActivity extends Activity {
 		try {
 			Float totalAmount = Float.valueOf(etTotalAmount.getText().toString());
 			Float tip = TIP_PERCENTAGE_10 * totalAmount.floatValue();
-			String tipString = String.format("Tip is: $%.2f", tip.floatValue());
+			String tipString = String.format(this.getResources().getString(R.string.tip_format), tip.floatValue());
 			tvTipAmount.setText(tipString);
 		}
 		catch (NumberFormatException e) {
@@ -50,7 +50,7 @@ public class TipCalculatorActivity extends Activity {
 		try {
 			Float totalAmount = Float.valueOf(etTotalAmount.getText().toString());
 			Float tip = TIP_PERCENTAGE_15 * totalAmount.floatValue();
-			String tipString = String.format("Tip is: $%.2f", tip.floatValue());
+			String tipString = String.format(this.getResources().getString(R.string.tip_format), tip.floatValue());
 			tvTipAmount.setText(tipString);
 		}
 		catch (NumberFormatException e) {
@@ -62,7 +62,7 @@ public class TipCalculatorActivity extends Activity {
 		try {
 			Float totalAmount = Float.valueOf(etTotalAmount.getText().toString());
 			Float tip = TIP_PERCENTAGE_20 * totalAmount.floatValue();
-			String tipString = String.format("Tip is: $%.2f", tip.floatValue());
+			String tipString = String.format(this.getResources().getString(R.string.tip_format), tip.floatValue());
 			tvTipAmount.setText(tipString);
 		}
 		catch (NumberFormatException e) {
